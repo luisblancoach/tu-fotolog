@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel='stylesheet' href="style.css"/>
+        <link rel='stylesheet' href="slideout.css"/>
+        <meta name='viewport' content="width=device-width, initial-scale=1.0"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    </head>
+    <body>
+        <nav id="menu">
+            <div class='sticky-toolbar-spacer'></div>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+            <h2>Hola</h2>
+        </nav>
+
+        <main id="panel">
+            <div class='toolbar'>
+            <img class='menu-icon' src="img/ic_view_headline_white_24px.svg" onclick='slideout.toggle()'/>
+            <span>Tu-Fotolog</span>
+                
+            <span class="toolbar-spacer"></span>
+            <img class=avatar src="https://pbs.twimg.com/profile_images/831993825635745796/HnVmB0-k.jpg"/>
+            </div>
+            
+            <div class='sticky-toolbar-spacer'></div>
+            
+            <div class="main-container">
+                <div class="posts-container">
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                    <span class='ribbon new-post'> Nuevo! </span>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div>
+                <div class="post">
+                    <h3>Dominaremos el mundo</h3>
+                    <p> Lorem Ipsum</p>
+                </div><!---aca termino el .post-container -->
+                </div><!--aca termino el .main-container -->
+            </div>   
+            <footer>
+                Copyright Nakama Workshop 2017
+            </footer>
+        </main>
+        <script>
+            var slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 256,
+                'tolerance': 70
+            });
+        </script>
+
+    </body>
+</html>
